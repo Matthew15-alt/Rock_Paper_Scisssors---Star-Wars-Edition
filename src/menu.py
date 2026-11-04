@@ -1,3 +1,8 @@
+from game_data import game_stats
+
+print(game_stats)
+
+
 def show_menu():
     is_running = True
     while is_running:
