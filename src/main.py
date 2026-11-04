@@ -7,7 +7,8 @@ from menu import show_menu
 
 
 def start_app():
-    print("Welcome to my Rock-Paper-Scissors Game!")
+    name = input("Please type in your name: ").strip()
+    print(f"Hello {name}, welcome to the Rock-Paper-Scissors Game!")
     show_menu()
     print("\nGoodbye!")
 
