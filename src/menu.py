@@ -1,25 +1,24 @@
 from game_data import game_stats
+from game_data import view_stats
+from game_data import game_play
 
 
 def show_menu():
     is_running = True
     while is_running:
         print("\nMenu:")
-        print("1. Rock")
-        print("2. Paper")
-        print("3. Scissors")
-        print("4. Exit")
+        print("1. Play Round")
+        print("2. View Stats")
+        print("3. Exit")
         break
 
-    choice = input("Choose an option: ").strip()
+    choice = input("Choose an option (Enter 1-3): ").strip()
 
     if choice == "1":
-        print("You chose: Rock")
+        game_play()
     elif choice == "2":
-        print("You chose: Paper")
+        view_stats()
     elif choice == "3":
-        print("You chose: Scissors")
-    elif choice == "4":
         is_running = False
     else:
-        print("Invalid choice. Please try again.")
+        print("Invalid option. Please try again.")

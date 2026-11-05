@@ -7,10 +7,10 @@ from menu import show_menu
 
 
 def start_app():
-    name = input("Please type in your name: ").strip()
-    print(f"Hello {name}, welcome to the Rock-Paper-Scissors Game!")
+    player_name = input("Please type in your name: ").strip()
+    print(f"Hello {player_name}, welcome to the Rock-Paper-Scissors Game!")
     show_menu()
-    print("\nGoodbye!")
+    print("\nThanks for playing!")
 
 
 if __name__ == "__main__":
