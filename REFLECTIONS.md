@@ -3,10 +3,10 @@
 1. Share one aspect of building this project you found challenging and how you
    overcame it.
 
-[Write your reflection here]
+[One aspect of building this project that I found challenging was creating the gameplay function for the user interface and figuring out how to program the stats for the player. For the gameplay I was having trouble with the print statements and how the program was supposed to figure out if either the player or computer won or lost, or even tied. I asked Ben for help while he was testing my program, and told me that I needed to have conditional statements for each move I choose and for what the computer randomly chooses. I used '==' for each statement. For example, if player_move == computer_move: print("It's a tie!"), and elif player_move == "jedi" and computer_move == "sith": print("Jedi defeats Sith through discipline and the Light Side. You win!"). I used this structure for each statement and got my programming working smoothly. For programming the player stats, I used += 1 for each conditional statement in the gameplay, that way the program knows to add 1 each time when the player wins, losses, or ties against the computer. I made the game_stats into a dictionary so that each time a new player adds their name it keeps track of their stats, and updates them for each session instead of clearing the stats each time the program closes and opens again. I created a json file so that the program saves the stats for each player, as well as save and update their stats to the scoreboard.]
 
 2. Share one technical concept that you gained a deeper understanding of
    through building this project. Explain that concept in simple terms and
    explain how it is used in your project.
 
-[Write your reflection here]
+[One concept I gained a deeper understanding of is creating and using a json file for my project. I like to think of the json file as a way loading and saving a video game; I made my file to load the previous stats of the players that typed in their user names, and save their added new stats to their already existing user stats in my game. Through this feature, I learned how persistent storage works and how real applications maintain user data between sessions. At first I was skeptical of using a json file in my project, since I've never heard of it before, or have seen it used in python. But after looking into it more and implementing this file along with the saving and loading feature, it really made my project standout. And I'm glad that I decided to take a chance on using this file.]

@@ -3,13 +3,17 @@
 # Run it with:  python3 src/main.py
 #
 # The brief is in PROJECT.md.
+from game_data import add_player
 from menu import show_menu
 
 
 def start_app():
     player_name = input("Please type in your name: ").strip()
-    print(f"Hello {player_name}, welcome to the Rock-Paper-Scissors Game!")
-    show_menu()
+    add_player(player_name)
+    print(
+        f"Hello {player_name}, welcome to my Rock-Paper-Scissors game, Star Wars Edition!"
+    )
+    show_menu(player_name)
     print("\nThanks for playing!")
 
 
